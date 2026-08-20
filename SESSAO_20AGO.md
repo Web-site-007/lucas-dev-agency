@@ -32,12 +32,12 @@
 - `e59dec9` — feat: email atualizado para contato.lucasdesignerweb@gmail.com
 - `a9e570c` — feat: formulário migrado para Vercel API
 
-## Tokens e Credenciais (salvos no .env)
+## Tokens e Credenciais (salvas no .env — NÃO versionar)
 - GITHUB_PAT
 - VERCEL_TOKEN
 - VERCEL_TEAM_ID
 - GMAIL_USER = contato.lucasdesignerweb@gmail.com
-- GMAIL_APP_PASSWORD = qmedvkhtfcocwoos
+- GMAIL_APP_PASSWORD = [salvo no Vercel, não versionado]
 
 ## Pendências
 - [ ] Logo final (usuário pode trocar)

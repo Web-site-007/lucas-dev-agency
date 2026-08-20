@@ -1,4 +1,4 @@
-# Sessão 20/ago — Email + Web3Forms Atualizados
+# Sessão 20/ago — Email Atualizado + Migração para Vercel API
 
 ## O que foi feito
 
@@ -10,29 +10,27 @@
 ### 2. Troca de Email Gmail
 - **Email antigo:** `inteligencia20072000@gmail.com`
 - **Email novo:** `contato.lucasdesignerweb@gmail.com`
-- **Senha de app:** salva no `.env` (arquivo local, não vai pro repo)
-- **Google permitiu trocar** o endereço Gmail (funcionalidade nova desde março/2026)
+- **Senha de app:** salva no Vercel (variáveis de ambiente)
 - Email antigo continua funcionando como alias
 
-### 3. Web3Forms Atualizado
-- **Access Key antiga:** `03e6252f-b384-405e-ad34-fd949c9a83f8`
-- **Access Key nova:** `08344ee7-0b46-47e5-a6b8-c234e0e2b886`
-- Form antigo deletado no Web3Forms
-- Novo form criado com email `contato.lucasdesignerweb@gmail.com`
-- Access Key atualizada em: index.html, anuncios/index.html
+### 3. Migração Web3Forms → Vercel API
+- Formulário migrado de Web3Forms para Vercel API + nodemailer
+- **Endpoint:** https://lucas-devagency-api.vercel.app/api/contact
+- Variáveis de ambiente: `GMAIL_USER` e `GMAIL_APP_PASSWORD`
+- Web3Forms descontinuado
 
 ### 4. Arquivos Atualizados
-- `index.html` — email + access key
-- `anuncios/index.html` — access key
+- `index.html` — email + formulário migrado para Vercel API
+- `anuncios/index.html` — formulário migrado para Vercel API
 - `portfolio/restaurante.html` — email
 - `portfolio/advocacia.html` — email
 - `portfolio/sistema-web.html` — email
 - `portfolio/landing-page.html` — email
-- `SESSAO-19-AGO-2.md` — email + access key
+- `SESSAO-19-AGO-2.md` — email + status
 
 ### 5. Commits nesta sessão
 - `e59dec9` — feat: email atualizado para contato.lucasdesignerweb@gmail.com
-- `a9e570c` — feat: Web3Forms access key atualizada
+- `a9e570c` — feat: formulário migrado para Vercel API
 
 ## Tokens e Credenciais (salvos no .env)
 - GITHUB_PAT
@@ -42,7 +40,5 @@
 - GMAIL_APP_PASSWORD = qmedvkhtfcocwoos
 
 ## Pendências
-- [ ] Logo final
-- [ ] Meta Pixel (quando tiver ID)
-- [ ] CSS/JS minificados
-- [ ] WebP/AVIF das imagens
+- [ ] Logo final (usuário pode trocar)
+- [ ] Meta Pixel (quando tiver ID do Facebook)
